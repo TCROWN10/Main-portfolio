@@ -20,6 +20,7 @@ const Contact = () => {
         try {
             if(name === "" || email === "" || message === ""){
                 console.log("All fields are required")
+                alert("All fields are required.");
             }
             else {
                 emailjs
