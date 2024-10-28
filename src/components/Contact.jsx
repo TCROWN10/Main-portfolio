@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
+import { useEffect } from 'react';
 
 const Contact = () => {
     const [name, setName] = useState("");
@@ -46,6 +47,9 @@ const Contact = () => {
         }
         
         }
+
+        useEffect(()=>{
+        },[name,email,message])
     return(
         <section className='py-16 lg:section' id="contact">
             <div className='contact mx-auto'>
@@ -62,11 +66,12 @@ const Contact = () => {
                     </div>
                 </div>
                 {/* form */}
-                <form ref={form} className='flex-1 border rounded-r-2xl flex flex-col gap-y-6 pb-24 p-6 w-[100%]' onClick={handleSubmit}>
+                <form ref={form} className='flex-1 border rounded-r-2xl flex flex-col gap-y-6 pb-24 p-6 w-[100%]' onSubmit={handleSubmit}>
                     <input
                     type="text" 
                     placeholder='your name'
                     name='name'
+                    value={name}
                     className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-blue transition-all'
                     onChange={(e)=>setName(e.target.value)}
                     />
@@ -74,12 +79,14 @@ const Contact = () => {
                     type="text"
                     placeholder="Your email"
                     name='email'
+                    value={email}
                     className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-blue transition-all"
                     onChange={(e)=>setEmail(e.target.value)}
                     />
                 <textarea
                     placeholder="Your message"
                     name='message'
+                    value={message}
                     className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-blue transition-all resize-none mb-12"
                     onChange={(e)=>setMessage(e.target.value)}
                 ></textarea>
