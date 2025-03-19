@@ -24,7 +24,7 @@ const Services = () => {
           >
             <h2 className="h2 text-[#006dff] mb-6">What I Do.</h2>
             <h3 className="h3 max-w-[455px] mb-16">
-              I'm a Front-end Developer with over 1 year of experience
+              I'm a Software Developer & a Blockchain-developer with over 3 year of experience
             </h3>
             <button className="btn btn-sm"><a  href="https://github.com/TCROWN10" target="_blank">See my work</a></button>
           </div>

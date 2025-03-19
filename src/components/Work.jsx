@@ -10,6 +10,8 @@ import Img6 from "../assets/portfolio-img-6 (2).png";
 import Img7 from "../assets/portfolio-img-7 (2).png";
 import Img8 from "../assets/portfolio-img-8 (2).png";
 import Img9 from "../assets/portfolio-img-9 (2).png";
+import Img10 from "../assets/NftMinting.png";
+import Img11 from "../assets/E-Commerce.png";
 import { Link } from "react-scroll";
 
 const Work = () => {
@@ -29,8 +31,7 @@ const Work = () => {
                   {" "}
                   These are my recent projects i've been working on with my
                   frontend development skills, using reactjs, tailwindcss and
-                  lots more. shoutout to Web3bridge and their amazing tutors
-                  from Adetutu to Jolah
+                  lots more.
                 </p>
                 <button className="btn btn-sm">
                   <Link smooth={true} spy={true} to="moreProjects">
@@ -91,6 +92,28 @@ const Work = () => {
                 </div>
               </div>
               {/* image */}
+              <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl  h-[42%]">
+                {/* overlay */}
+                <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+                {/* img */}
+                <img
+                  src={Img11}
+                  alt=""
+                  className="group-hover:scale-125 transition-all duration-500"
+                />
+                {/* pretitle */}
+                <div className="absolute -bottom-full left-12 group-hover:top-16 lg:group-hover:top-20 transition-all duration-500 z-50">
+                  <a href="https://e-commerce-flax-seven-26.vercel.app/" target="_blank">
+                    <span className="text-gradient text-3xl">E-Commerce</span>
+                  </a>
+                </div>
+                {/* title */}
+                <div className="absolute -bottom-full left-12 group-hover:bottom-3 lg:group-hover:bottom-6 transition-all duration-700 z-50">
+                  <span className="text-white text-xl">
+                  An E-commerce app where you can buy and sell produ
+                  </span>
+                </div>
+              </div>
               <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl  h-[42%]">
                 {/* overlay */}
                 <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
@@ -226,6 +249,25 @@ const Work = () => {
                       target="_blank"
                     >
                       <span className="text-gradient  text-2xl">Multi-form</span>
+                    </a>
+                  </div>
+                </div>
+                <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
+                  {/* overlay */}
+                  <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+                  {/* img */}
+                  <img
+                    src={Img10}
+                    alt=""
+                    className="group-hover:scale-125 transition-all duration-500"
+                  />
+                  {/* pretitle */}
+                  <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
+                    <a
+                      href="https://minted-nft-five.vercel.app/"
+                      target="_blank"
+                    >
+                      <span className="text-gradient  text-2xl">NFT-MINTING</span>
                     </a>
                   </div>
                 </div>
