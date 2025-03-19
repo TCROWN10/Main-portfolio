@@ -13,7 +13,7 @@ const Banner = () => {
                     {/* text */}
                     <div className='flex-1 text-center font-secondary lg:text-left'>
                         <h1 className='text-[55px] font-bold leading-[0.8] lg:text-[110px]'>
-                            T <span className='text-[#006dff]'>CROWN</span>
+                            BOLAJI <span className='text-[#006dff]'>OLUWATOBI</span>
                         </h1>
                         <div className='mb-4 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'>
                             <p className='text-[#006dff] mr-4'> I am a <span className="text-white">Developer</span></p>
